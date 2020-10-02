@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59ba1a1ed9.js" crossorigin="anonymous"></script>
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Podcast</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<!-- Se realiza la posición del logo y los elementos a desplegar en 
+    mobile o en desktop con la referencia a la posición que deben ir -->
+<header>
+    <div class="logo"><img src="images/logo.svg" alt="Logo de la pagina" /></div>
+
+    <nav id="navigation">
+
+        <div class="control-menu">
+            <a href="#navigation" class="open"><span></span></a>
+            <a href="#" class="close"><span></span></a>
+
+        </div>
+
+        <ul class="nav-items">
+
+            <li><a href="#Episodios"> EPISODIOS</a></li>
+            <li><a href="#Historia">NOSOTROS</a></li>
+            <li><a href="#Invitados">ENTREVISTAS</a></li>
+            <li><a href="#Temas"> TÓPICOS</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- El contenido central de la pagina Web divido en 6 secciones -->
+<div id="central-content">
+
+    <!-- Primera sección del contenido se muestra el titulo principal con un parrafo y un boton -->
+    <div class="inicio">
+        <h1>Hello <span class="world"> world</span> pale blue dot</h1>
+        <p class="mobile">
+            Un podcast que explora el mundo de la programacion. Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+        <p class="desktop">
+            El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+
+        <button> CONOCÉ MÁS </button>
+    </div>
+
+    <!-- Segunda Seccion: Se presenta un titulo, como los embebidos de Spotify, 
+        utiliza divs (figura-inicio, figura-final) para la creación de figuras -->
+    <div id=Episodios class="episodios">
+        <div class="figura-inicio"></div>
+        <h2>Episodios</h2>
+
+        <div class="podcast">
+            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" allow="encrypted-media"></iframe>
+        </div>
+        <div class="figura-final"></div>
+    </div>
+    <div class="fin"></div>
+
+    <!-- Tercera Sección: Imagen que se superpone al contenido anterior con un parrafo -->
+    <div id="Historia" class="historia">
+        <img src="./images/phone.png" alt="Celular con pagina de podcast">
+        <div class="contenido">
+            <h2>De dónde venimos</h2>
+            <p>
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br><br> Our planet is a lonely speck in the great enveloping cosmic dark. In
+                our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cuarta Sección: Titulo e imagenes correspondientes a los personajes invitados -->
+    <div id="Invitados" class="invitados">
+        <h2>Invitadas/os estelares</h2>
+        <div class="imagenes">
+            <img src="./images/grace-hopper.png" alt="Imagen grace-hopper">
+            <img src="./images/Katie-Bouman.png" alt="Imagen Katie-Bouman">
+            <img src="./images/Margaret_Hamilton.png" alt="Imagen Margaret_Hamilton">
+            <img src="./images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="Imagen computador en 1950">
+            <img src="./images/Computer_operators_with_an_Eniac_the_world’s_first_programmable_general_purpose_computer.png" alt="Imagen Eniac">
+            <img src="./images/susan-kare.png" alt="Imagen susan-kare">
+        </div>
+    </div>
+    <!-- Quinta Sección: Se presentan los temas tiene un titulo, como los temas y sus correspondientes iconos
+    Se utilizan divs para el posicionamiento luego en css con Flexbox -->
+    <div class="temas" id="Temas">
+
+        <h2>Algunos de nuestros temas</h2>
+        <div class="titulo-imagen">
+            <div class="tema">
+                <img src="./images/icon1.svg" alt="Icono trabajo remoto">
+                <h3>Trabajo remoto</h3>
+            </div>
+            <div class="tema">
+                <img src="./images/icon2.svg" alt="Icono Repensado la programación">
+                <h3>Repensado la programación</h3>
+            </div>
+            <div class="tema">
+                <img src="./images/icon3.svg" alt="Icono Bases del código">
+                <h3>Bases del código</h3>
+            </div>
+            <div class="tema">
+                <img src="./images/icon4.svg" alt="Icono Seguridad infromática">
+                <h3>Seguridad infromática</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sexta Sección: Se muestra un titulo y un boton, utiliza un div para la creación de una figura -->
+    <div class="novedades">
+        <div class="figura-inicio"></div>
+        <div class="contenido">
+            <h2>¿Querés las últimas novedades?</h2>
+            <button>ESCUCHÁ LOS EPISODIOS</button>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Footer: Se mueestra el logo de Copyright asi como los iconos, que al seleccionar abren la 
+pagina web a la que corresponde -->
+
+<footer>
+
+    <p>© 2019- Hello blue pale dot</p>
+    <div class="iconos">
+        <a href="https://www.spotify.com/co/" target="blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/explore" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://web.telegram.org/#/login" target="blank"><i class="fab fa-telegram"></i></a>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
